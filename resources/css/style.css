@@ -94,7 +94,7 @@ h3 {
 
 .content {
   float: right;
-  background: linear-gradient(#8f8f8f, #664a77);
+  background: linear-gradient(to bottom right, #8f8f8f, #664a77);
   width: 60%;
   display: flex;
   flex-direction: row;
