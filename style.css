@@ -155,6 +155,7 @@ h3 {
 }
 
 .answer img {
+  margin-top: 5%;
   height: auto;
   width: 200px;
   border-radius: 10%;
