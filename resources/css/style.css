@@ -73,7 +73,7 @@ h3 {
       from(rgba(0, 0, 0, 0.479)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url(andy-holmes-734162-unsplash.jpg);
+    url(img/andy-holmes-734162-unsplash.jpg);
   background-size: cover;
 }
 
