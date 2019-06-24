@@ -1,0 +1,14 @@
+/* Large tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 850px) {
+  .side-description {
+    width: 100%;
+    float: none;
+    position: relative;
+    padding-bottom: 10%;
+  }
+
+  .content {
+    width: 100%;
+    float: none;
+  }
+}

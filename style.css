@@ -1,3 +1,7 @@
+:root {
+  --main-text-color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +11,7 @@
 
 html,
 body {
-  color: #ffffff;
+  color: var(--main-text-color);
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -26,7 +30,7 @@ h1 {
   font-weight: 500;
   margin: 0;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--main-text-color);
   font-size: 240%;
   word-spacing: 4px;
   letter-spacing: 1px;
@@ -48,28 +52,28 @@ h3 {
 .side-description h2:after {
   display: block;
   height: 2px;
-  background-color: #840400;
+  background-color: #2392a5;
   content: " ";
   width: 100px;
   margin: 30px auto;
 }
 
 .side-description {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 40%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
   float: left;
   background-image: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      from(rgba(0, 0, 0, 0.6)),
-      to(rgba(0, 0, 0, 0.6))
+      from(rgba(0, 0, 0, 0.479)),
+      to(rgba(0, 0, 0, 0.3))
     ),
-    url(anders-jilden-219256-unsplash.jpg); /* Black */
+    url(andy-holmes-734162-unsplash.jpg);
   background-size: cover;
 }
 
@@ -90,85 +94,75 @@ h3 {
 
 .content {
   float: right;
+  background: linear-gradient(#8f8f8f, #664a77);
   width: 60%;
-  right: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 
-.python {
-  width: 100%;
-  background-color: #840400;
+.content div {
+  margin-top: 5%;
+  margin-left: 2%;
+  padding-bottom: 5%;
 }
 
-.python img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.question {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  font-size: 120%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  background: #000000;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.billboard {
-  width: 100%;
-  background-color: #8e0045;
-}
-
-.voronoi {
-  width: 100%;
-  background-color: #770058;
-}
-
-.markov {
-  width: 100%;
-  background-color: #600047;
-}
-
-.puzzles {
-  width: 100%;
-  background-color: #44001a;
-}
-
-.card {
+.text {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
-  height: 300px;
-  margin: -150px;
-  float: left;
-  perspective: 500px;
+  transform: translate(-50%, -80%);
 }
 
-.content {
+.question .btn {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .content {
-  transform: rotateY(180deg);
-  transition: transform 0.5s;
-}
-
-.front,
-.back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: white;
-  line-height: 300px;
-  color: #03446a;
-  text-align: center;
-  font-size: 60px;
-  border-radius: 5px;
-  backface-visibility: hidden;
-}
-
-.back {
-  background: #03446a;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
   color: white;
-  transform: rotateY(180deg);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.question .btn:hover {
+  background-color: #2392a5;
+}
+
+.answer {
+  display: none;
+  flex-direction: column;
+  float: none;
+}
+
+.answer img {
+  height: auto;
+  width: 200px;
+  border-radius: 10%;
+  align-self: center;
+}
+
+.answer p {
+  margin-top: 5%;
+  max-width: 250px;
+  text-align: center;
 }

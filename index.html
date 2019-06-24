@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="resources/queries.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400">
     <title>CPSC 203</title>
 </head>
@@ -30,37 +30,100 @@
             right and you can scroll through some explanations of what this means.</p>
     </div>
     <div class="content">
-        <div class="card">
-            <div class="content">
-                <div class="front">
-                    Front
-                </div>
-                <div class="back">
-                    Back!
-                </div>
+        <div class="unit">
+            <div class=question>
+                <span class="text">What language will you be learning?</span>
+                <button class="btn" onclick="myFunction('answer-for-language')">Answer</button>
+            </div>
+            <div class="answer" id="answer-for-language">
+                <img src="python-logo-1.png" alt="python-logo" />
+                <p> The language that will be used in this course is Python just like in CPSC 103</p>
             </div>
         </div>
-        <div class="python">
-            <h2>What language will we be programming in?</h2>
-            <p>Python</p>
-            <img src=python-logo.png>
+        <div class="unit">
+            <div class=question>
+                <span class="text">How will we begin?</span>
+                <button class="btn" onclick="myFunction('answer-for-unit-1')">Answer</button>
+            </div>
+            <div class="answer" id="answer-for-unit-1">
+                <img src="55686220_4.jpg" alt="knitting" />
+                <p> Well, by knitting ... okay ... so you're probably wondering KNITTING?!? But knitting is a cool
+                    analogy to function decomposition and for loops (AKA iterations).
+                </p>
+            </div>
         </div>
-        <div class="billboard">
-            <h2>Will we learn data visualizations?</h2>
-            <p>Billboard</p>
+        <div class="unit">
+            <div class=question>
+                <span class="text">Will we be learning about Panda?</span>
+                <button class="btn" onclick="myFunction('answer-for-unit-2')">Answer</button>
+            </div>
+            <div class="answer" id="answer-for-unit-2">
+                <img src="charts-share-fb-hot100.jpg" alt="BillboardTop100" />
+                <p> Yes! Okay, not the animal type but the one that makes data analysis easy by looking
+                    at scraped data from the Billboard Top 100 (Ah yeah! Some cool music analysis).
+                </p>
+            </div>
         </div>
-        <div class="voronoi">
-            <h2>What sort of fields do these applied algorithms cover?</h2>
-            <p>Voronoi</p>
+        <div class="unit">
+            <div class=question>
+                <span class="text">So where will we be applying algorithms?</span>
+                <button class="btn" onclick="myFunction('answer-for-unit-3')">Answer</button>
+            </div>
+            <div class="answer" id="answer-for-unit-3">
+                <img src="Voronoi-300x300.png" alt="Voronoi Diagram" />
+                <p> Good question! One example will be with Voronoi Diagrams. That cool image there. We will talk about
+                    how it's used with tree growth and art! Art? You'll see :)
+                </p>
+            </div>
         </div>
-        <div class="markov">
-            <h2>What sort of fields do these applied algorithms cover?</h2>
-            <p>Markov</p>
+        <div class="unit">
+            <div class=question>
+                <span class="text">Will we learn how to generate a random song?</span>
+                <button class="btn" onclick="myFunction('answer-for-unit-4')">Answer</button>
+            </div>
+            <div class="answer" id="answer-for-unit-4">
+                <img src="Screen Shot 2019-06-23 at 1.44.39 AM.png" alt="Voronoi Diagram" />
+                <p> Yes! Through applying Markov Chains!
+                </p>
+            </div>
         </div>
-        <div class="puzzles">
-            <p>Puzzle</p>
+        <div class="unit">
+            <div class=question>
+                <span class="text">How will we improve on our problem solving?</span>
+                <button class="btn" onclick="myFunction('answer-for-unit-5')">Answer</button>
+            </div>
+            <div class="answer" id="answer-for-unit-5">
+                <img src="sudoku-552944_640.jpg" alt="Sudoku puzzle" />
+                <p> By solving a puzzle! (Like Sudoku). We will build an algorithm to do it for us!
+                </p>
+            </div>
+        </div>
+        <div class="unit">
+            <div class=question>
+                <span class="text">Will we plan a trip?</span>
+                <button class="btn" onclick="myFunction('answer-for-unit-6')">Answer</button>
+            </div>
+            <div class="answer" id="answer-for-unit-6">
+                <img src="5cd5c5d61f000030009e628b.jpeg" alt="Road Map" />
+                <p> Yes, we'll attempt to find an optimal route for planning a road trip!
+                </p>
+            </div>
+        </div>
+        <div class="unit">
+            <div class=question>
+                <span class="text">Will we be entering the wizarding world?</span>
+                <button class="btn" onclick="myFunction('answer-for-unit-7')">Answer</button>
+            </div>
+            <div class="answer" id="answer-for-unit-7">
+                <img src="Screen Shot 2019-06-22 at 7.30.52 PM.png" alt="HP Facebook" />
+                <p> Yes! We'll figure out the popularity of Harry Potter through NLTK and figure out his social network
+                    (like FACEBOOK!)
+                </p>
+            </div>
         </div>
     </div>
+
+
 
 
 
